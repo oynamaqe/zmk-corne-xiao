@@ -3,6 +3,18 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        Home_Row_Mod: Home_Row_Mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MOD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -14,10 +26,10 @@
             //                    | GUI | LWR | SPC |                    | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q           &kp W           &kp E               &kp R             &kp T                      &kp Y      &kp U              &kp I                &kp O            &kp P                    &kp ESC
-&kp BACKSPACE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G                      &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &kp SQT
-&kp LSHFT      &kp Z           &kp X           &kp C               &kp V             &kp B    &kp ENTER  &none  &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH                 &kp RIGHT_ALT
-                                               &kp LGUI            &mo 1             &kp RET                    &kp SPACE  &mo 2              &kp RIGHT_CONTROL
+&kp TAB        &kp Q                     &kp W                     &kp E                         &kp R                       &kp T                      &kp Y      &kp U                        &kp I                          &kp O                      &kp P                              &kp ESC
+&kp BACKSPACE  &Home_Row_Mod LEFT_GUI A  &Home_Row_Mod LEFT_ALT S  &Home_Row_Mod LEFT_CONTROL D  &Home_Row_Mod LEFT_SHIFT F  &kp G                      &kp H      &Home_Row_Mod RIGHT_SHIFT J  &Home_Row_Mod RIGHT_CONTROL K  &Home_Row_Mod RIGHT_ALT L  &Home_Row_Mod RIGHT_GUI SEMICOLON  &kp SQT
+&kp LSHFT      &kp Z                     &kp X                     &kp C                         &kp V                       &kp B    &kp ENTER  &none  &kp N      &kp M                        &kp COMMA                      &kp DOT                    &kp FSLH                           &kp RIGHT_ALT
+                                                                   &kp LGUI                      &mo 1                       &kp RET                    &kp SPACE  &mo 2                        &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
