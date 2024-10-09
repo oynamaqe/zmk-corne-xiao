@@ -38,10 +38,10 @@
             //                    | GUI | LWR | SPC |                    | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q                          &kp W                          &kp E                              &kp R                            &kp T                      &kp Y      &kp U                              &kp I                                &kp O                           &kp P                                   &kp ESC
-&kp BACKSPACE  &Left_Pos_Hold_Tap LEFT_GUI A  &Left_Pos_Hold_Tap LEFT_ALT S  &Left_Pos_Hold_Tap LEFT_CONTROL D  &Left_Pos_Hold_Tap LEFT_SHIFT F  &kp G                      &kp H      &Right_Pos_Hold_Tap RIGHT_SHIFT J  &Right_Pos_Hold_Tap RIGHT_CONTROL K  &Left_Pos_Hold_Tap RIGHT_ALT L  &Left_Pos_Hold_Tap RIGHT_GUI SEMICOLON  &kp SQT
-&kp LSHFT      &kp Z                          &kp X                          &kp C                              &kp V                            &kp B    &kp ENTER  &none  &kp N      &kp M                              &kp COMMA                            &kp DOT                         &kp FSLH                                &kp RIGHT_ALT
-                                                                             &kp LGUI                           &mo 1                            &kp RET                    &kp SPACE  &mo 2                              &kp RIGHT_CONTROL
+&kp TAB    &kp Q                          &kp W                          &kp E                              &kp R                            &kp T                      &kp Y      &kp U                             &kp I                               &kp O                          &kp P                                  &kp ESC
+&kp BSPC   &Left_Pos_Hold_Tap LEFT_GUI A  &Left_Pos_Hold_Tap LEFT_ALT S  &Left_Pos_Hold_Tap LEFT_CONTROL D  &Left_Pos_Hold_Tap LEFT_SHIFT F  &kp G                      &kp H      &Right_Pos_Hold_Tap LEFT_SHIFT J  &Right_Pos_Hold_Tap LEFT_CONTROL K  &Left_Pos_Hold_Tap LEFT_ALT L  &Left_Pos_Hold_Tap LEFT_GUI SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                          &kp X                          &kp C                              &kp V                            &kp B    &kp ENTER  &none  &kp N      &kp M                             &kp COMMA                           &kp DOT                        &kp FSLH                               &kp RIGHT_ALT
+                                                                         &kp LGUI                           &mo 1                            &kp RET                    &kp SPACE  &mo 2                             &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
